@@ -35,6 +35,11 @@ describe('TaskList Component', () => {
       completed: false,
       createdAt: '2023-01-01T00:00:00.000Z',
       updatedAt: '2023-01-01T00:00:00.000Z',
+      createdBy: {
+        _id: 'user1',
+        name: 'John Doe',
+        email: 'john@example.com'
+      }
     },
     {
       _id: '2',
@@ -42,6 +47,11 @@ describe('TaskList Component', () => {
       completed: true,
       createdAt: '2023-01-02T00:00:00.000Z',
       updatedAt: '2023-01-02T00:00:00.000Z',
+      createdBy: {
+        _id: 'user2',
+        name: 'Jane Smith',
+        email: 'jane@example.com'
+      }
     },
   ];
 
@@ -71,6 +81,11 @@ describe('TaskList Component', () => {
       completed: false,
       createdAt: '2023-01-03T00:00:00.000Z',
       updatedAt: '2023-01-03T00:00:00.000Z',
+      createdBy: {
+        _id: 'user3',
+        name: 'New User',
+        email: 'newuser@example.com'
+      }
     };
     mockTaskService.createTask.mockResolvedValue(newTask);
 

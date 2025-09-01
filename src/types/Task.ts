@@ -4,6 +4,11 @@ export interface Task {
   completed: boolean;
   createdAt: string;
   updatedAt: string;
+  createdBy: {
+    _id: string;
+    name: string;
+    email: string;
+  };
 }
 
 export interface CreateTaskDto {
