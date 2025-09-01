@@ -103,6 +103,13 @@
   flex: 1;
 }
 
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 12px;
+}
+
 .task-checkbox {
   width: 20px;
   height: 20px;
@@ -157,6 +164,24 @@
 
 .delete-button:hover {
   background-color: #fee;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-button:hover {
+  background-color: #e3f2fd;
 }
 
 .no-tasks {
@@ -257,7 +282,8 @@
     width: 100%;
   }
   
-  .delete-button {
+  .task-actions {
     align-self: flex-end;
+    margin-left: 0;
   }
 }

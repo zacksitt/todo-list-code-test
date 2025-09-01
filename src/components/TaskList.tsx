@@ -217,13 +217,22 @@ const TaskList: React.FC = () => {
                   )}
                 </div>
               </div>
-              <button
-                onClick={() => handleDeleteTask(task._id)}
-                className="delete-button"
-                title="Delete task"
-              >
-                ×
-              </button>
+              <div className="task-actions">
+                <button
+                  onClick={() => handleStartEdit(task)}
+                  className="edit-button"
+                  title="Edit task title"
+                >
+                  ✏️
+                </button>
+                <button
+                  onClick={() => handleDeleteTask(task._id)}
+                  className="delete-button"
+                  title="Delete task"
+                >
+                  ×
+                </button>
+              </div>
             </div>
           ))
         )}
